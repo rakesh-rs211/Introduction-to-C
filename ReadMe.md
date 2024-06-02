@@ -124,19 +124,19 @@ One way to look at a **program** is it takes some data, performs specific set of
 
 Native Datatypes in C
 
-- Integral datatype: [Binary format](Images/Datatype.drawio.svg)
+- Integer datatype: [Binary format](Images/Datatype.drawio.svg)
 	- int: 4 bytes of memory(atleast)
 	- unsigned int: 4 bytes(range 0-2^32-1)
 	- short int: 2 bytes
 	- short unsigned int: 2 bytes
 	- long: 8 bytes
 	- long long : 16 bytes
-- floating point: [IEEE 752 format](https://www.geeksforgeeks.org/ieee-standard-754-floating-point-numbers/)
+- Floating point: [IEEE 752 format](https://www.geeksforgeeks.org/ieee-standard-754-floating-point-numbers/)
     - float: single-precision floating point
     - double: double-percision floating point
     - long double: extended-precision 
-- char: 1 byte
-- boolean: 1 byte
+- Char: char,1 byte
+- boolean: bool, 1 byte
 
 ```c
 #include <stdio.h>
