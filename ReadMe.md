@@ -99,7 +99,7 @@ gcc -Wall -Wextra -02 hello hello.o
 
 ![Compilation](Images/CompileCode.jpg)
 
-***Example: Linking an external library*** *Complex Number library*
+***Example: Linking an external library*** *Random Number Generator from GSL*
 
 ***Example: Missing library files:*** *AFNI: Pre-compiled binaries*
 
@@ -110,6 +110,9 @@ gcc -Wall -Wextra -02 hello hello.o
 > RPATHS are the associated with the executable itself. These are the paths to  shared object files that will be linked at runtime. setrpath.sh can be used to fixed linking issue on Alliance clusters.    
 >
 > ```$ setrpaths.sh --add_path /path/to/be/added {exectuable}```
+## Scientific Libraries
+GSL: GNU Scientific Libraries
+
 
 ## Basic Datatype in C
 
