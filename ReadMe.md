@@ -3,9 +3,15 @@
 1.		Mark your attendance
 2.		Guest accounts
 ## Acessing the files
+The course material is available on Github. And you can clone the repository using the following command
+```console
+$ mkdir COSS2024
+$ git clone https://github.com/rakesh-rs211/IntroC.git
+```
 
 ## Local machine
 If you working on MacOS or Linux you can download the file and run them on the local machine using 'Terminal'. 
+Note: One of the examples uses GSL libraries install on our software stack. Unless it already install on your local system you will not be able to run this example.
 
 ### Graham or Cedar Cluster Access
 
