@@ -29,12 +29,12 @@ $ ls
 CPP  C_SRC
 ```
 ### Interlude: Linux commands
-- cd: 	change directory
-- ls:     list the file and sub-directory in the current working directory
-- mkdir:	Make a new directory
-- ssh:	One a secure connection to a remote server using ssh(secure-shell)
-- cat:	Print content of a file to screen
-- vi, nano: Text editors
+- **cd**: 	change directory
+- **ls**:     	list the file and sub-directory in the current working directory
+- **mkdir**:	Make a new directory
+- **ssh**:	One a secure connection to a remote server using ssh(secure-shell)
+- **cat:**	Print content of a file to screen
+- **vi, nano**: Text editors
 
 ### Interactive session on compute nodes
 
