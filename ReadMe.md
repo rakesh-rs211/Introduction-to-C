@@ -16,7 +16,7 @@ Note: One of the examples uses GSL libraries installed on our software stack. Un
 
 Instructions to obtain credentials for the guest account are provided on the Moodle page.  In order to connect to the remote cluster, you would need a Terminal(Mac and Linux users) or a Terminal Emulator(Windows).
 
-- [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html for Windows) 
+- [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) for Windows 
 - Windows Subsystem Linux
 - Powershell
 - [Terminal on MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
