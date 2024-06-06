@@ -176,14 +176,14 @@ $ gcc -o -I$GSL_ROOT/lib rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 >
 > ```$ setrpaths.sh --add_path /path/to/be/added {exectuable}```
 ## Scientific Libraries
-[**GSL**](https://www.gnu.org/software/gsl/): GNU Scientific Libraries
-[**LAPACK/BLAS**](https://www.gnu.org/software/gsl/): Basic Linear Algebra Subroutines
-[**PETSc**](https://petsc.org/release/):  Portable, Extensible Toolkit for Scientific Computation
-[**FFTW**](https://fftw.org/): Fast Fourier Transformation 
-**MKL**: Math Kernel Libraries
-[Others](https://en.wikipedia.org/wiki/List_of_numerical_libraries)
-## Basic Datatype in C
+1) [**GSL**](https://www.gnu.org/software/gsl/): GNU Scientific Libraries
+2) [**LAPACK/BLAS**](https://www.gnu.org/software/gsl/): Basic Linear Algebra Subroutines
+3) [**PETSc**](https://petsc.org/release/):  Portable, Extensible Toolkit for Scientific Computation
+4) [**FFTW**](https://fftw.org/): Fast Fourier Transformation 
+5) **MKL**: Math Kernel Libraries
+6) [Others](https://en.wikipedia.org/wiki/List_of_numerical_libraries)
 
+## Basic Datatype in C
 One way to look at a **program** is it takes some data, performs specific set of actions(algorithm). This data is store in memory as a variable
 
 ```int varName 52```
