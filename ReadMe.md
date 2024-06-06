@@ -116,10 +116,59 @@ gcc -Wall -Wextra -02 hello hello.o
 ![Compilation](Images/CompileCode.jpg)
 
 ***Example: Linking an external library*** *Random Number Generator from GSL*
+```c
+#include<stdio.h>
 
-***Example: Missing library files:*** *AFNI: Pre-compiled binaries*
+#include<gsl/gsl_vector.h>
+#include<gsl/gsl_rng.h>
+#include<gsl/gsl_randist.h>
 
-***Example: Missing library files:*** *TOPAS:Pre-compiled binaries*
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char **argv)
+{
+        // Allocate array for 100 random numbers
+        int N = 100;
+        double num;
+        gsl_vector *vec_randNums = gsl_vector_alloc(N);
+
+        /* Intialize the random number generator */
+        const gsl_rng_type *T;
+        gsl_rng *r;
+
+        gsl_rng_env_setup();
+
+        T = gsl_rng_default;
+        r = gsl_rng_alloc(T);
+
+        /* Create 100 random numbers sampled from
+         * Gaussian or Normal distribution (mu=0, sigma=1)   */
+        for(int i=0; i<N; i++){
+                num = gsl_ran_gaussian(r,1);
+                gsl_vector_set(vec_randNums, i, num);
+        }
+        gsl_rng_free(r);
+
+        gsl_vector_fprintf(stdout, vec_randNums,"%8.3le");
+
+        gsl_vector_free(vec_randNums);
+        return 0;
+}
+```
+*Compilation*
+```console
+$ module load gsl
+$ gcc -c -o randnumgen.o randnumgen.c
+$ gcc -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
+```
+Alternative
+```console
+$ export GSL_ROOT=/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcc12/gsl/2.7
+$ gcc -c -o -I$GSL_ROOT/include randnumgen.o randnumgen.c 
+$ gcc -o -I$GSL_ROOT/lib rangnumgen randnumgen.o -lgsl -lgslcblas -lm
+```
+
 
 ```ldd {exectuable}```
 
@@ -127,7 +176,7 @@ gcc -Wall -Wextra -02 hello hello.o
 >
 > ```$ setrpaths.sh --add_path /path/to/be/added {exectuable}```
 ## Scientific Libraries
-GSL: GNU Scientific Libraries
+(https://en.wikipedia.org/wiki/List_of_numerical_libraries)
 
 
 ## Basic Datatype in C
