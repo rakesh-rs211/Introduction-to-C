@@ -165,8 +165,8 @@ $ gcc -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 Alternative
 ```console
 $ export GSL_ROOT=/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcc12/gsl/2.7
-$ gcc -c -o -I$GSL_ROOT/include randnumgen.o randnumgen.c 
-$ gcc -o -I$GSL_ROOT/lib rangnumgen randnumgen.o -lgsl -lgslcblas -lm
+$ gcc -I$GSL_ROOT/include -c -o  randnumgen.o randnumgen.c 
+$ gcc -L$GSL_ROOT/lib -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 ```
 
 
