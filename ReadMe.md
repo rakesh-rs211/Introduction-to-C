@@ -944,11 +944,8 @@ int square2D::getCount(){
 
 
 ## Workshops of interest
-[COSS2023](https://training.computeontario.ca/coss2023.php)
+[COSS2024](https://training.computeontario.ca/coss2024.php)
 
-- **Object-Oriented Programming (OOP) and Exception Handling Using C++**
-- Parallel Debugging and Profiling for Compiled Languages
 - Modern C++ Parallel Programming
-- Cluster Parallel Programming (MPI)
-- Parallel Computing with Fortran
+- Multicore Parallel Programming (OpenMP)
 - GPU Programming: CUDA
