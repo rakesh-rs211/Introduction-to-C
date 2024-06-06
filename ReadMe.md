@@ -29,17 +29,17 @@ $ ls
 CPP  C_SRC
 ```
 ### Interlude: Linux commands
-cd: 	change directory
-ls:     list the file and sub-directory in the current working directory
-mkdir:	Make a new directory
-ssh:	One a secure connection to a remote server using ssh(secure-shell)
-vi, nano: Text editors
-cat:	Print content of a file to screen
+- cd: 	change directory
+- ls:     list the file and sub-directory in the current working directory
+- mkdir:	Make a new directory
+- ssh:	One a secure connection to a remote server using ssh(secure-shell)
+- cat:	Print content of a file to screen
+- vi, nano: Text editors
 
 ### Interactive session on compute nodes
 
 ```
-salloc -c 1 --mem=2g --time=1:00:00 -A def-training-wa_cpu --reservation coss-wr_cpu
+salloc -c 1 --mem=2g --time=2:00:00 
 ```
 
 ## Introduction
