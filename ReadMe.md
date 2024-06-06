@@ -5,27 +5,37 @@
 ## Acessing the files
 The course material is available on Github. And you can clone the repository using the following command
 ```console
-$ mkdir COSS2024
 $ git clone https://github.com/rakesh-rs211/IntroC.git
 ```
 
 ## Local machine
-If you working on MacOS or Linux you can download the file and run them on the local machine using 'Terminal'. 
-Note: One of the examples uses GSL libraries install on our software stack. Unless it already install on your local system you will not be able to run this example.
+If you are working on MacOS or Linux, you can download the file and run them on the local machine using 'Terminal'. 
+Note: One of the examples uses GSL libraries installed on our software stack. Unless they are already installed on your local system, you will not be able to run this example.
 
-### Graham or Cedar Cluster Access
+### Magic Castle: Recommended
 
-Guest accounts are created for each participant and you can log into graham cluster using this login credential using a terminal or MobaXterm.
+Instructions to obtain credentials for the guest account are provided on the Moodle page.  In order to connect to the remote cluster, you would need a Terminal(Mac and Linux users) or a Terminal Emulator(Windows) to run ssh-client
 
-MobaXterm for windows users: https://mobaxterm.mobatek.net/download-home-edition.html
+- MobaXterm for windows users: https://mobaxterm.mobatek.net/download-home-edition.html
+- Windows Subsystem Linux
+- Powershell
 
 ```
-$ ssh guestXXX@graham.computecanada.ca ## cedar.computecanada.ca
-$ cp /home/guest539/COSS_IntroC_2023.tar.gz ./
-$ tar xfz COSS_IntroC_2023.tar.gz
+$ ssh userXXXX@coss-a.c3.ca
+$ mkdir COSS2024
+$ git clone https://github.com/rakesh-rs211/IntroC.git
+$ cd CourseMaterial
 $ ls
 CPP  C_SRC
 ```
+### Interlude: Linux commands
+cd: 	change directory
+ls:     list the file and sub-directory in the current working directory
+mkdir:	Make a new directory
+ssh:	One a secure connection to a remote server using ssh(secure-shell)
+vi, nano: Text editors
+cat:	Print content of a file to screen
+
 ### Interactive session on compute nodes
 
 ```
