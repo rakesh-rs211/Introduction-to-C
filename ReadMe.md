@@ -81,9 +81,9 @@ Each C program has a **```main()```** function and this is the place where progr
 int main(int argc, char **argv)
 ```
 
-We can pass arguments separated by a white space; ```argc``` contains the number of arguments pass and ```argv[]``` is the list(in C this list is referred as ***array***) of arguments.
+We can pass arguments separated by a white space; ```argc``` contains the number of arguments passed and ```argv[]``` is the list(in C this list is referred as ***array***) of arguments.
 
-Here, we are calling a function ```fprintf()``` which comes from the C standard library. Before we can call this function, we have to declaration it. And the declaration is in ```#include <stdio.h>```. ```\n``` for new line and ```%s``` is a placeholder for ***string*** *datatype*
+Here, we are calling a function ```fprintf()```, which comes from the C standard library. Before we can call this function, we have to decalre it. And the declaration is in ```#include <stdio.h>```. ```\n``` stands for new line and ```%s``` is a placeholder for ***string*** *datatype*
 
 
 ```#include``` is a pre-processor directive and the content of this file is  added to the source code before compilation.
@@ -98,15 +98,15 @@ Finally, ```return 0``` returns an integer value *'0'* to implies that the progr
 
 
 ### Interlude: Output and Input
-> ***stdout, stderr***: The output from the program is streamed to stdout or stderr, default is the shell terminal or the screen, printf streams the output to stdout. On the command line we can specify the stdout and stderr ```1>``` and ```2>```, respectively
+> ***stdout, stderr***: The output from the program is streamed to *stdout* or *stderr*; it defaults to shell terminal or the screen, printf streams the output to stdout. On the command line we can specify the stdout and stderr using ```1>``` and ```2>```, respectively.
 
 > ***stdin***: The input stream; by default its the keyboard
 
 ## Compiling the code
 
-Compilation is a process of converting the *source code* that is human-readable to *machine language* that the computer can understand. Its a two step process. 
+Compilation is a process of converting the *source code* that is human-readable to *machine language* that the computer can understand. It's a two-step process. 
 - Object files: Each source file is compiled to generate the object file. Object by itself can not be executed
-- Exectuables: Executable file is generated from linking with one of more object files. In addition, executable can link dynamically to shared object files at runtime.
+- Exectuables: Executable file is generated from linking one of more object files. In addition, executable can link dynamically to shared object files at runtime.
 
 ```
 gcc -Wall -Wextra -02 -c hello.o hello.c
@@ -172,7 +172,7 @@ $ gcc -L$GSL_ROOT/lib -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 
 ```ldd {exectuable}```
 
-> RPATHS are the associated with the executable itself. These are the paths to  shared object files that will be linked at runtime. setrpath.sh can be used to fixed linking issue on Alliance clusters.    
+> RPATHS are the associated with the executable itself. These are the paths to the shared object files that will be linked at runtime. setrpath.sh can be used to fixed linking issue on Alliance clusters.    
 >
 > ```$ setrpaths.sh --add_path /path/to/be/added {exectuable}```
 ## Scientific Libraries
@@ -184,7 +184,7 @@ $ gcc -L$GSL_ROOT/lib -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 6) [Others](https://en.wikipedia.org/wiki/List_of_numerical_libraries)
 
 ## Basic Datatype in C
-One way to look at a **program** is it takes some data, performs specific set of actions(algorithm). This data is store in memory as a variable
+One way to look at a **program** is that it takes some data, performs a specific set of actions(algorithm). 
 
 ```int varName 52```
 
@@ -303,7 +303,7 @@ Value of variable-i after the code block: 10
 - *a ^ b*  : XOR; exclusive or; return true either \'a\', \'b\' is true but not both
 - *!a*     : NOT: not \'a\' 
 
-> Note: Implicit and explicit casting: When we divide two integers the output is a integer as well. 
+> Note: Implicit and explicit casting: When we divide two integers, the output is a integer. 
 
 ```c
 #include <stdio.h>
@@ -321,7 +321,7 @@ int main()
 ```
 
 ### Bitwise operator
-> Bit wise operator performs the action on binary representation of the data
+> Bitwise operator operates on each bit of the binary representation of the data
 
 - *&, |,  ^* : Bit-wise AND, OR and XOR
 - *\>>*      : Each bit is shifted to right and least significant bit is discarded
@@ -402,8 +402,8 @@ int main(int argv, char **argc){
         return 0;
 }
 ```
-
-*For* and *while* loops are used to execute a set of statement until a certain conditions is met. Typical *for* loop will following construct:
+## Loops
+*For* and *while* loops are used to execute a set of statements, until a certain conditions is met. Typical, *for* loop:
 
 ```
 for(initialization; condition; update)
@@ -443,9 +443,9 @@ int main(int argc, char **argv){
 }
 ```
 
-> *continue* is used to skip an iteration in the code block and move to the next; *break* exits out of the code block.
+> *continue* is used to skip an iteration in the codeblock and move to the next; *break* exits out of the code block.
 
-```while {}``` and ```do...while``` can be used to repeating a code block similar to for loop. But while loops only have condition statement and the statement within the while loop are execute as long as this conditions is met.
+```while {}``` and ```do...while``` can be used to repeating a codeblock similar to *for* loop. But *while* loops only have condition statement and the statement within the while loop are execute as long as this conditions is met.
 
 ```c
 while(condition){
@@ -461,10 +461,12 @@ In do..while loop the statements within the code block are executed once before 
 
 ## Arrays and Pointers
 
-### Static Arrays
-Arrays are used to store similar type of data contagiously in memory. The array has single variable each individual data point is uniquely distinguished by it indices. Static array are fixed-length array during the execution of the program. The size of these arrays are declared during intialization, either explicitly or implicitly
+An **Array** is a data structure that contains a set of elements of the same datatypes, stored contagiously in memory.
 
-e.g. Student score in mid-terms. Here scores of 32 students from a single subjected are store in memory as single precision floating point. 
+### Static Array
+Static array are fixed-length array during the execution of the program. The size of these arrays are declared during intialization, either explicitly or implicitly.
+
+e.g. Here scores of 32 students from a single subjected are store in memory as single precision floating point. 
 ```float score[32]; ```
 ```int Arr1[5]={1,25,45,23,4};``` 
 e.g. Student scores from 5 different courses. Here each row represents a individual course and columns represents student score
@@ -524,7 +526,7 @@ int main(){
 
 #### Pointers
 
-Pointers are one of the most powerful features in C(and C++). Simply put, pointers are just variable containing(or "pointing to") the memory address of the data rather than the data itself. In order the obtain the data in memory address, pointers has to be de referenced.
+Pointers are one of the most powerful features in C(and C++). Simply put, pointers are just variables containing(or "pointing to") the memory address of the data, rather than the data itself. In order the obtain the data in memory address, pointers has to be de-referenced the address.
 
 ```c
 #include <stdio.h>
@@ -617,7 +619,7 @@ Time taken: 1.060267e+01 sec
 ```
 
 ## Functions
-Functions are part of the code that can be reused by a function call in other parts of the code. C is a procedural language and designed to perform actions on the data. For example adding two numbers and return an output to the function call. Therefore, C program is built around functions to perform this tasks. This is one of the fundamental difference between C and C++. C is built around procedure or action and Function are key to this implementation. C++ is built around object, we will discuss in the later part of the workshop.
+Functions are part of the code that can be reused in other parts of the code, by a function call . C is a procedural language and designed to perform actions on the data. For example adding two numbers and return an output to the function call. And C program is built around functions to perform these tasks. 
 
 **Example:** Adding two numbers
 ```c
@@ -676,7 +678,7 @@ int main(){
 The value of 'a' after passing by value: 10
 The value of 'a' after passing by value: 32
 ```
-When we have a large amount of data to a function, passing this data by value means a large overhead in copy this data to the function. Instead we can use pointers to pass this data to the function. When we pass data through a pointer, function has access to original memory data and it can be modified. It might be a desired outcome in some scenario. In such case, we can use ```const``` qualifier such that any changes to data within function results in a compilation error.
+Passing by value, created a copy of the data within the function. Instead we can use pointers to pass this data to the function. When we pass data through a pointer, function has access to original memory data. It might havre undesired outcome in some scenario. In such case, we can use ```const``` qualifier such that any changes to data within function will results in a compilation error.
 
 ```c
 void fn_byReference(const int *fnptr_a){
