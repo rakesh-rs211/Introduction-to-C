@@ -5,7 +5,7 @@
 ## Acessing the files
 The course material is available on Github. And you can clone the repository using the following command
 ```console
-$ git clone https://github.com/rakesh-rs211/IntroC.git
+$ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 ```
 
 ## Local machine
@@ -23,7 +23,7 @@ Instructions to obtain credentials for the guest account are provided on the Moo
 ```
 $ ssh userXXXX@coss-a.c3.ca
 $ mkdir COSS2024
-$ git clone https://github.com/rakesh-rs211/IntroC.git
+$ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 $ cd CourseMaterial
 $ ls
 CPP  C_SRC
