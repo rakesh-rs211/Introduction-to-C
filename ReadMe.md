@@ -730,10 +730,14 @@ int stack_Pop(Node* headPtr){
 	return data;
 }
 ```
-
-
-## Misc: Bit Manipulation, Scope, Pre-processor directives
-
+### Binary tree
+```c
+struct BTNode{
+	int data;
+	struct BTNode *rightNode;
+	struct BTNode *leftNode;
+};
+```
 ## Object-oriented programming with C++ 
 
 In object-oriented programming the data and corresponding function are packages together into  **objects**. In contrast C is a procedure oriented language where function are key unit. In C++, primay unit of programming is a class, which can be used to create new object. *Class* and *objects* have a similar relation as *data types* and *variables*
