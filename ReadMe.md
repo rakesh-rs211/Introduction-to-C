@@ -747,6 +747,7 @@ int stack_Pop(Node* headPtr){
 }
 ```
 ### Binary tree
+![BinaryTree](Images/BinaryTree.svg)
 ```c
 struct BTNode{
 	int data;
