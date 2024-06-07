@@ -949,6 +949,5 @@ int square2D::getCount(){
 ## Workshops of interest
 [COSS2024](https://training.computeontario.ca/coss2024.php)
 
-- Modern C++ Parallel Programming
 - Multicore Parallel Programming (OpenMP)
 - GPU Programming: CUDA
