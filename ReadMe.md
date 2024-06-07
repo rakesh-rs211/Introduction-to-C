@@ -23,11 +23,14 @@ Instructions to obtain credentials for the guest account are provided on the Moo
 
 ```
 $ ssh userXXXX@coss-a.c3.ca
+$ cd ~/scratch
 $ mkdir COSS2024
+$ cd COSS2024
 $ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 $ cd CourseMaterial
 $ ls
 CPP  C_SRC
+$ cd C_SRC
 ```
 ### Interlude: Linux commands
 - **cd**: 	change directory
