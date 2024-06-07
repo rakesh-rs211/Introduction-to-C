@@ -27,6 +27,7 @@ $ cd ~/scratch
 $ mkdir COSS2024
 $ cd COSS2024
 $ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
+$ cd Introduction-to-C
 $ cd CourseMaterial
 $ ls
 CPP  C_SRC
