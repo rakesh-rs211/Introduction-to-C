@@ -419,8 +419,9 @@ for(initialization; condition; update)
 **Example:** Calculate the sum of first N integers
 ```c
 #include <stdio.h>
-#define N 100
+
 int main(int argc, char **argv){
+	const int N = 100;
 	int i,sum;
 	for(i=1,sum;i<=N;i++){
 		sum += i;
