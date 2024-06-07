@@ -532,7 +532,7 @@ int main(){
 
 #### Pointers
 
-Pointers are one of the most powerful features in C(and C++). Simply put, pointers are just variables containing(or "pointing to") the memory address of the data, rather than the data itself. In order the obtain the data in memory address, pointers has to be de-referenced the address.
+Pointers are one of the most powerful features in C(and C++). Simply put, pointers are just variables containing(or "pointing to") the memory address of the data, rather than the data itself. In order the obtain the data in memory address, pointers has to be de-referenced.
 
 ```c
 #include <stdio.h>
