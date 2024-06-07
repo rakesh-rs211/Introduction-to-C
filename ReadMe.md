@@ -608,6 +608,7 @@ for(int irow=0;irow<nrow;irow++){
 	}
 }
 
+$ ./Dynamic_2DArr_RowAccess
 Time taken: 1.433964e+00 sec
 ```
 
@@ -619,6 +620,7 @@ for(int icol=0;icol<ncol;icol++){
 	}
 }
 
+$ ./Dynamic_2DArr_ColWiseAccess
 Time taken: 1.060267e+01 sec
 ```
 
