@@ -113,8 +113,8 @@ Compilation is a process of converting the *source code* that is human-readable 
 - Exectuables: Executable file is generated from linking one of more object files. In addition, executable can link dynamically to shared object files at runtime.
 
 ```
-gcc -Wall -Wextra -02 -c hello.o hello.c
-gcc -Wall -Wextra -02 hello hello.o
+gcc -O2 -Wall -Wextra -c -o hello.o hello.c
+gcc -O2 -Wall -Wextra -o hello hello.o
 ```
 
 ![Compilation](Images/CompileCode.jpg)
