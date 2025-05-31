@@ -1,7 +1,6 @@
 ##  Getting started
+Mark your attendance
 
-1.		Mark your attendance
-2.		Guest accounts
 ## Acessing the files
 The course material is available on Github. And you can clone the repository using the following command to local machine or the cluster if you have access.
 ```console
