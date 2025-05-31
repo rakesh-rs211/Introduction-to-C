@@ -3,7 +3,7 @@
 1.		Mark your attendance
 2.		Guest accounts
 ## Acessing the files
-The course material is available on Github. And you can clone the repository using the following command
+The course material is available on Github. And you can clone the repository using the following command to local machine or the cluster if you have access.
 ```console
 $ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 ```
@@ -12,7 +12,12 @@ $ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 If you are working on MacOS or Linux, you can download the file and run them on the local machine using 'Terminal'. 
 Note: One of the examples uses GSL libraries installed on our software stack. Unless they are already installed on your local system, you will not be able to run this example.
 
-### Magic Castle: Recommended
+## Replit (Online tool)
+
+1) Signup for Replit: https://replit.com/signup
+2) Go to this repo and you can fork it: https://replit.com/@rakeshraju2/Workshop2025COSS
+
+## Guest accounts
 
 Instructions to obtain credentials for the guest account are provided on the Moodle page.  In order to connect to the remote cluster, you would need a Terminal(Mac and Linux users) or a Terminal Emulator(Windows).
 
@@ -22,16 +27,15 @@ Instructions to obtain credentials for the guest account are provided on the Moo
 - [Terminal on MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
 
 ```
-$ ssh userXXXX@coss-a.c3.ca
+$ ssh {username}@oss2025a.c3.ca # or oss2025b.c3.ca
 $ cd ~/scratch
-$ mkdir COSS2024
-$ cd COSS2024
+$ mkdir COSS2025
+$ cd COSS2025
 $ git clone https://github.com/rakesh-rs211/Introduction-to-C.git
 $ cd Introduction-to-C
-$ cd CourseMaterial
+$ cd CourseMaterial/C_SRC
 $ ls
-CPP  C_SRC
-$ cd C_SRC
+
 ```
 ### Interlude: Linux commands
 - **cd**: 	change directory
