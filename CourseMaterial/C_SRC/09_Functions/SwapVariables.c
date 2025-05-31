@@ -14,7 +14,7 @@ void swap_byref(int* ptr_a, int* ptr_b){
   *ptr_b = tmp;
 }
 
-int main(){
+int main()
 {
   int a = 2, b = 100;
 
