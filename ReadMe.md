@@ -98,7 +98,7 @@ Finally, ```return 0``` returns an integer value *'0'* to implies that the progr
 
 ```/* */```: Comments out enclosed between them
  
-```\\```   : Comments out the line
+```//```   : Comments out the line
 
 
 ### Interlude: Output and Input
