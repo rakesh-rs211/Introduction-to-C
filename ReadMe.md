@@ -44,12 +44,6 @@ $ ls
 - **cat:**	Print content of a file to screen
 - **vi, nano**: Text editors
 
-### Interactive session on compute nodes
-
-```
-salloc -c 1 --mem=2g --time=2:00:00 
-```
-
 ## Introduction
 - This course is intended as an introduction to programming. 
 - Write computationally efficient code and gives low-level access to the hardware
