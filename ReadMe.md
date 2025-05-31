@@ -66,6 +66,8 @@ salloc -c 1 --mem=2g --time=2:00:00
 2) Kernighan B., and Ritchie D., 1988, ANSI C: The C Programming Language, 2nd Edition.
 3) Cormen T.H., Leiserson C.E., Rivest R.L., and Stein C., 2022, Introduction to Algorithm, 4th Edition
 
+CPPREFERENCE.CA: https://www.cppreference.com/w/c.html
+
 ## First C Program: Hello World!
 
 Let\'s take a look at a simple C program
