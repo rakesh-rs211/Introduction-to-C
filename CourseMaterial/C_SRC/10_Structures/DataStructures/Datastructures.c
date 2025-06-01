@@ -8,6 +8,6 @@ struct NodeLL* create_NodeLL(int data){
       return NewNode;
 }
 
-bool isEmpty(struct NodeLL* head){
+bool isEmptyLL(struct NodeLL* head){
       return (head==nullptr);
 }      
