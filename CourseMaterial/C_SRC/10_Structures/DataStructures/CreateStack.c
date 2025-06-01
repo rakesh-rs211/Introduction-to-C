@@ -1,5 +1,5 @@
 #include "Datastructures.h"
-include "Stack.h"
+#include "Stack.h"
 #include <stdio.h>
 
 int main(int argc, char[] *argv){
