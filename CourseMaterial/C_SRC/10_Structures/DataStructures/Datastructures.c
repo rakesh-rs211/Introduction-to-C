@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include "datastructure.h"
 
 struct NodeLL* create_NodeLL(int data){
@@ -6,3 +7,7 @@ struct NodeLL* create_NodeLL(int data){
       NewNode->next = nullptr;
       return NewNode;
 }
+
+bool isEmpty(struct NodeLL* head){
+      return (head==nullptr);
+}      
