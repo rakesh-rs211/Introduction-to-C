@@ -11,7 +11,7 @@ struct Node_LL{
 struct Node_BT{
   int data;
   struct Node_BT *left;
-  struct Node_BT *left;
+  struct Node_BT *right;
 };
 
 #endif
