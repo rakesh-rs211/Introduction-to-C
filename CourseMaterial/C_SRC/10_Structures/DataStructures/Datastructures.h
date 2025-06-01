@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #ifndef DataStructures_COSS_H
 #define DataStructures_COSS_H
 
@@ -13,5 +14,8 @@ struct Node_BT{
   struct Node_BT *left;
   struct Node_BT *right;
 };
+struct NodeLL* create_NodeLL(int data);
+bool isEmpty(int data);
+
 
 #endif
