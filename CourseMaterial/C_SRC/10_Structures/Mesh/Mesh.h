@@ -1,5 +1,6 @@
 #ifndef MESH_COSS_H
 #define MESH_COSS_H
+#include <stdio.h>
 typedef struct point2d{
         double x;
         double y;
