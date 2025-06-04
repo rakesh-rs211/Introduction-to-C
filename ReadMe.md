@@ -820,7 +820,9 @@ struct BTNode{
 
 
 ## Workshops of interest
-[COSS2024](https://training.computeontario.ca/coss2024.php)
+[COSS2025](https://training.computeontario.ca/coss2025.php)
 
 - Multicore Parallel Programming (OpenMP)
 - GPU Programming: CUDA
+- Parallel Programming with MPI
+- Moving to RUST for Memory Safe Code
