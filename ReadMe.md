@@ -14,7 +14,6 @@ Note: One of the examples uses GSL libraries installed on our software stack. Un
 ## Replit (Online tool)
 
 1) Signup for Replit: https://replit.com/signup
-2) Go to this repo and you can fork it: https://replit.com/@rakeshraju2/Workshop2025COSS
 
 ## Guest accounts
 
@@ -288,7 +287,7 @@ Value of variable-i after the code block: 10
 
 ### Assignment operation
 - *a = b*  : Assign value in variable \'b\' to \'a\'
-- *a = a + b*  : Assign value in variable \'b\' to \'a+b\'
+- *a = a + b*  : Evaluates the right-hand side \'a + b\' and assigns the value to \'a\'
 - *a += b* : Add the value of \'b\' to \'a\'
 - *a -= b* : Subtract the value of \'b\' from \'a\'
 - *a++*    : Increment the value of \'a\' by 1
