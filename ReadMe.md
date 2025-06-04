@@ -288,6 +288,7 @@ Value of variable-i after the code block: 10
 
 ### Assignment operation
 - *a = b*  : Assign value in variable \'b\' to \'a\'
+- *a = a + b*  : Assign value in variable \'b\' to \'a+b\'
 - *a += b* : Add the value of \'b\' to \'a\'
 - *a -= b* : Subtract the value of \'b\' from \'a\'
 - *a++*    : Increment the value of \'a\' by 1
