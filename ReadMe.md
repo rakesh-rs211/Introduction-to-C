@@ -25,7 +25,7 @@ Instructions to obtain credentials for the guest account are provided on the Moo
 - [Terminal on MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
 
 ```
-$ ssh {username}@oss2025a.c3.ca # or oss2025b.c3.ca
+$ ssh {username}@coss2025a.c3.ca # or coss2025b.c3.ca
 $ cd ~/scratch
 $ mkdir COSS2025
 $ cd COSS2025
