@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   stk.head = NULL; nptr = NULL;
   for(i=0; i<n;i++){
     stack_push(&stk,arr[i]);
-    printf("%p \n",stk.head);
+    //printf("%p \n",stk.head);
   }
   /* Print the stack */
   nptr = stk.head;
