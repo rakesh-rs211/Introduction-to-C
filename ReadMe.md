@@ -159,12 +159,7 @@ int main(int argc, char **argv)
 *Compilation*
 ```console
 $ module load gsl
-$ gcc -c -o randnumgen.o randnumgen.c
-$ gcc -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
-```
-Alternative
-```console
-$ export GSL_ROOT=/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcc12/gsl/2.7
+$ export GSL_ROOT=$EBROOTGSL
 $ gcc -I$GSL_ROOT/include -c -o  randnumgen.o randnumgen.c 
 $ gcc -L$GSL_ROOT/lib -o rangnumgen randnumgen.o -lgsl -lgslcblas -lm
 ```
