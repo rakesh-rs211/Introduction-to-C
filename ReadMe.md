@@ -813,7 +813,12 @@ struct BTNode{
 	struct BTNode *leftNode;
 };
 ```
-
+## Closing Remarks
+- All turn on the warning flags while compiling the code(-Wall -Wextra). And pay attention to warning messages
+- One can use '-g' flag while debugging. However it production code must compiled without th debugging flag.
+- Avoid using Variable length arrays
+- Use existing libraries
+- The current worshop focuses on some of fundamental concepts in programming using single core. We have few other course on Parallel computing
 
 
 ## Workshops of interest
