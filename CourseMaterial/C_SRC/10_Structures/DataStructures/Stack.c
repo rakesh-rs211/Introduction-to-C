@@ -9,6 +9,6 @@ void stack_push(struct Stack* sptr, int data){
   new_node->data = data;
   new_node->next = sptr->head;
   sptr->head = new_node;
-  printf("Head in stack_push: %p\n",sptr->head);
+  //printf("Head in stack_push: %p\n",sptr->head);
   return;
 }
