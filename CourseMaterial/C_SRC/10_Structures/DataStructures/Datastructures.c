@@ -1,13 +1,14 @@
 #include <stdbool.h>
-#include "datastructure.h"
+#include <stdlib.h>
+#include "Datastructures.h"
 
 struct NodeLL* create_NodeLL(int data){
-      struct NodeLL* NewNode = (struct NodeLL*)malloc(sizeof(struct NodeLL*));
+      struct NodeLL* NewNode = malloc(sizeof(struct NodeLL));
       NewNode->data = data;
-      NewNode->next = nullptr;
+      NewNode->next = NULL;
       return NewNode;
 }
 
 bool isEmptyLL(struct NodeLL* head){
-      return (head==nullptr);
-}      
+      return (head==NULL);
+}
