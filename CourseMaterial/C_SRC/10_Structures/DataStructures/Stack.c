@@ -1,23 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "Datastructures.h"
+#include "Stack.h"
 
-void stack_push(struct NodeLL *head, int data){
+void stack_push(struct Stack* sptr, int data){
   struct NodeLL *new_node;
-  new_node = Create_NodeLL(data);
-  new_node->next = head;
-  head = new_node;
+  new_node = malloc(sizeof(struct NodeLL));
+  new_node->data = data;
+  new_node->next = sptr->head;
+  sptr->head = new_node;
+  printf("Head in stack_push: %p\n",sptr->head);
   return;
 }
-
- int stack_pop(struct NodeLL *head){
-  int data;
-  if(isEmptyLL(head)){
-    printf("Stack is empty\n");
-    data = -1e+10; /* Set to arbitarily low value */
-  }
-  else{
-    data = head->data;
-    head = head->next;
-  }
-  return data;
-}  
