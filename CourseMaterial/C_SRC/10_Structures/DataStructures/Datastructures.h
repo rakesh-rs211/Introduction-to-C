@@ -15,9 +15,4 @@ struct NodeBT{
   struct NodeBT *left;
   struct NodeBT *right;
 };
-
-struct NodeLL* create_NodeLL(int data);
-bool isEmptyLL(struct NodeLL* head);
-
-
 #endif
