@@ -3,19 +3,21 @@
 #define DataStructures_COSS_H
 
 /* Singly-connected node */
-struct Node_LL{
+struct NodeLL{
   int data;
-  struct Node_LL *next;
+  struct NodeLL *next;
 };
 
+
 /*  Binary Tree Struct */
-struct Node_BT{
+struct NodeBT{
   int data;
-  struct Node_BT *left;
-  struct Node_BT *right;
+  struct NodeBT *left;
+  struct NodeBT *right;
 };
+
 struct NodeLL* create_NodeLL(int data);
-bool isEmptyLL(int data);
+bool isEmptyLL(struct NodeLL* head);
 
 
 #endif
