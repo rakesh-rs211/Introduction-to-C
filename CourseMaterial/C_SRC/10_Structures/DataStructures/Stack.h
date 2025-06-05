@@ -1,8 +1,10 @@
 #ifndef STACK_COSS_H
 #define STACK_COSS_H
 STACK_COSS_H
-
-void stack_push(struct NodeLL *head, int data);
-int stack_pop(struct NodeLL *head);
+#include "Datastructures.h"
+struct Stack {
+        struct NodeLL* head;
+};
+void stack_push(struct Stack* sptr, int data);
 
 #endif
