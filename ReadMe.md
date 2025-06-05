@@ -383,7 +383,7 @@ int main(int argc, char **argv)
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define EPSILON 1E-10
+
 int main(int argv, char **argc){
         float a=2,b;
         b = sqrt(a);
