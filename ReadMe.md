@@ -46,9 +46,6 @@ $ ls
 ## Introduction
 - This course is intended as an introduction to programming. 
 - Write computationally efficient code and gives low-level access to the hardware
-- It was developed by **Dennis Ritchie** at Bell Laborataries for the development of *Unix OS*
-- Linux kernel was mostly written in C and rest in assemby language
-- Its a powerful programming language and is useful in exploring the fundamental concepts of programming
 - Portability and light-weight
 - Widely used in embedded programming
 
