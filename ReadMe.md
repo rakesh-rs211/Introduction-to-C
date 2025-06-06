@@ -822,3 +822,4 @@ struct BTNode{
 - GPU Programming: CUDA
 - Parallel Programming with MPI
 - Moving to RUST for Memory Safe Code
+- Fortran as a Second Language
